@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <Style>
+        body{
+            background-color: rgb(38, 238, 38);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        .parking_image{
+            margin-left: 90%;
+        }
+        .title{
+            margin-left: 800px;
+        font-family: Georgia, serif;
+        font-size: 70px;
+        }
+        .bike_image{
+            -webkit-transform:rotate(-45deg);  
+            -moz-transform: rotate(-45deg);  
+            -ms-transform: rotate(-45deg);  
+            -o-transform: rotate(-45deg);  
+            transform: rotate(-45deg); 
+            margin-left: 80%;
+        }
+        .sigin_up_button{
+            margin-left: 55%;
+        }
+        .bike_image{
+            margin-top: 20px;
+        }
+        .parking_logo{
+            margin-left: 20%;
+        }
+        .car_image{
+            margin-left: 40%;
+        }
+    </Style>
+
+</head>
+<body>
+    <div>
+        <div class="parking_image">
+            <img src="./image/parking_image.png" alt="" width="150px" height="200px">
+
+        </div>
+        <div class="title">
+            <b><a href="./payment gateway/payment gateway/home.html" style="color: rgb(187, 9, 20)">IOT Based Smart </a>
+                <br>
+                <a  href="./payment gateway/payment gateway/home.html" style="color: rgb(187, 9, 20)">Parking System</a>
+            </b>
+        </div>
+        <div class="bike_image">
+            <img src="./image/bike.png" alt="" width="350px" height="400px">
+        </div>
+        <div class="sigin_up_button">
+            <input type="button" id="login" class="btn btn-danger btn-group-lg  " value="SIGN UP >">
+
+        </div>
+        <div class="parking_logo">
+            <img src="./image/parking_logo.png" alt="" width="300px">
+        </div>
+        <div class="car_image">
+            <img src="./image/car.png" alt="">
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("login").onclick = function services() {
+            location.href = "./payment gateway/payment gateway/home.html";
+        };
+        
+        
+    </script>
+</body>
+</html>

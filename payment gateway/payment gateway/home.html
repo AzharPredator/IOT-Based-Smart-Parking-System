@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IOT Based Parking lot </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <style>
+        
+        body{
+            background-image: url('./parking lots image 1.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+
+        }
+        .title2{
+            margin-left: 240px;
+        }
+        .title3{
+            margin-left: 480px;
+        }
+        .form-control{
+            width: 300px;
+        }
+        .image{
+            margin-left: 500px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="title">
+            <h1 class="title1" style="color: rgb(167, 241, 28)">IOT Based</h1>
+            <h2 class="title2" style="color: rgb(111, 215, 247)">Smart Parking</h2>
+            <h1 class="title3" style="color: rgb(31, 231, 148)">System</h1>
+        </div>
+        <div class="form-container mt-5">
+            <form class="w-50 mx-auto" id="entryForm">
+                <div class="form-group">
+                    <label for="Owner Name" style="color: rgb(52, 202, 195)">Owner Name:</label>
+                    <input type="text" class="form-control rounded-0 shadow-sm" id="Owner Name" placeholder="Owner Name">
+                </div>
+                <div class="form-group">
+                    <label for="car" style="color: rgb(52, 202, 195)">Vehicle Name:</label>
+                    <input type="text" class="form-control rounded-0 shadow-sm" id="car" placeholder="Vehicle Name">
+                </div>
+                <div class="form-group">
+                    <label for="licensePlate" style="color: rgb(52, 202, 195)">Vehicle Number:</label>
+                    <input type="text" class="form-control rounded-0 shadow-sm" id="licensePlate" placeholder="NN-NN-LL,NN-LL-NN,....etc">
+                </div>
+                    <div class="col-6">
+                        <label for="entryDate" style="color: rgb(52, 202, 195)">Phone Number:</label>
+                        <input type="number" class="form-control rounded-0 shadow-sm" id="entryDate">
+                    </div>
+                <BR></BR>
+                <input type="button"  id="payment"   value="payment" class="btn btn-primary btn-xl  ">
+                
+            </form>
+            <br><br>
+            
+            
+            <a href="../payment gateway/payment gateway/pay.html"></a>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("payment").onclick = function services() {
+            location.href = "./pay.html";
+        };
+        
+        
+    </script>
+</body>
+</html>
